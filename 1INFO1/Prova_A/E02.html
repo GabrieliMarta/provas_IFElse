@@ -9,11 +9,32 @@
     - Se o usuário optar por receber auxílio transporte, terá um outro desconto de 6%.
     Calcule e apresente o salário líquido após os descontos, de acordo com a taxação apresentada acima. 
     */
-    
+
     //Entrada
-
-
+    const salario = Number(prompt(`Informe qual é o valor do seu salário:`).trim().replace(",", "."));
+    const transporte = Number(prompt(`Informe se você deseja recebre auxílio transporte`).trim().toLowerCase());
     //Processamento
+    if (salario <= 2000) {
+        if(transporte == "sim"){
+            
+        }
+
+        alert(`Seu salário será de ${(salario).toFixed(2).replace(".",",")} sem desconto! `);
+
+    }
+    else if (salario >= 2000 && salario < 3500) {
+        alert(`Seu salário será de ${(salario - (0.9)).toFixed(2).replace(".",",")} com desconto de 10%!`);
+
+
+    }
+    else if (salario >= 3500 && salario < 6000) {
+        alert(`Seu salário será de ${(salario * (0.8)).toFixed(2).replace(".",",")}, com desconto de 20%!`);
+
+    }
+    else if (salario >= 6000) {
+        alert(`Seu salário será de ${(salario * (0.7)).toFixed(2).replace(".",",")} ,com desconto de 30%!`);
+
+    }
 
 
     //Saída

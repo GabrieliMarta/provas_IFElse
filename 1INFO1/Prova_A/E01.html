@@ -6,9 +6,54 @@
     */
     
     //Entrada
-
-
+    const p1 = Number(prompt(`Informe qual é o líder que você deseja? \n João(1) e Maria(2)`).trim());
+    const p2 = Number(prompt(`Informe qual é o líder que você deseja? \n João(1) e Maria(2)`).trim());
+    const p3 = Number(prompt(`Informe qual é o líder que você deseja? \n João(1) e Maria(2)`).trim());
+    const p4 = Number(prompt(`Informe qual é o líder que você deseja? \n João(1) e Maria(2)`).trim());
+    const p5 = Number(prompt(`Informe qual é o líder que você deseja? \n João(1) e Maria(2)`).trim());
     //Processamento
+    let pontos1 = 0;
+    let pontos2 = 0;
+    if(p1 == "1"){
+        pontos1 ++;
+    }
+     else if(p2 == "1" ){
+        pontos1 ++;
+     }
+     else if(p3 == "1" ){
+        pontos1 ++;
+     }
+     else if(p4 == "1" ){
+        pontos1 ++;
+     }
+     else if(p5 == "1" ){
+        pontos1 ++;
+     }
+     if( p1 == "2"){
+        pontos2 ++;
+     }
+     else if(p2 == "2"){
+        pontos2 ++;
+     }
+     else if(p3 == "2"){
+        pontos2 ++;
+     }
+     else if(p4 == "2"){
+        pontos2 ++;
+     }
+     else if(p5 == "2"){
+        pontos2 ++;
+     }
+     
+    if( pontos1 > pontos2){
+        alert(" O líder escolhido foi João(1) \n Com" + pontos1 + pontos);
+    } 
+    else{
+        alert("O líder escolhido foi Maria(2) \n Com" + pontos2 + pontos);
+    }
+    
+    
+    
 
 
     //Saída
